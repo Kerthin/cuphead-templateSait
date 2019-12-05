@@ -15,7 +15,7 @@
 
 This site is an example of work created specifically for the portfolio. If you want to take a look at it, then you can follow the link given below.
 
-- [Demo](https://kerthin.github.io/trees-templateSait/)
+- [Demo](https://kerthin.github.io/cuphead-templateSait/)
 
 #### Use technology.
 
