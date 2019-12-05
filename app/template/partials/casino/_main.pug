@@ -1,0 +1,83 @@
+main.main
+	.bosses._mgb
+	.scene
+		.scene__article
+			.scene__quoteWrap
+				h1.scene__quote So smart, so agile, I'll believe the bones load. Hee-da-Ho!
+		.chips
+		.chipsDead
+		.king
+		.tableTexture
+			.plate
+				.plate__inside._rPlate
+			.plate
+				.plate__inside._lPlate
+			.circleSquare
+				.circleSquare__inside
+					.circleSquare__empty
+				.circleSquare__valueWrap._lvw
+					.circleSquare__value
+						p.circleSquare__title low
+				.circleSquare__valueWrap._rvw
+					.circleSquare__value._r
+						p.circleSquare__title high
+				.circleSquare__info
+					.circleSquare__angle
+						.circleSquare__angleInside
+							.circleSquare__angleEmpty
+					.circleSquare__bonesWrap
+						.circleSquare__bonesTitleWrap
+							p.circleSquare__bonesTitle 180 
+								span for
+								| 1
+						.circleSquare__bones
+							+bonesMix()
+							+bonesMix()
+							+bonesMix()
+					.circleSquare__angle._reverse
+						.circleSquare__angleInside
+							.circleSquare__angleEmpty
+				.lineWrap
+					mixin shildsMix(displayTitle, titleType, rate, displayHeart, lotColor, lotTitleTyper, value)
+						.line
+							.shild
+								.shild__titleWrap
+									p.shild__title(class=`_${displayTitle} _${titleType}`)= rate
+										span  for 
+										| 1
+									.shild__heart(class=`_${displayHeart}`)
+								.shild__lotWrap(class=`_${lotColor}`)
+									p.shild__lotTitle(class=`_${lotTitleTyper}`)= value
+					+shildsMix('', '', '60', 'none', 'green', '', 'start')
+					+shildsMix('', '', '30', 'none', 'red', 'number', '1')
+					+shildsMix('none', '', '', '', 'red', 'number', '2')
+					+shildsMix('', '', '12', 'none', 'black', '', 'clear')
+					+shildsMix('', '', '12', 'none', 'green', '4l', 'safe')
+					+shildsMix('', 'single', '8', 'none', 'red', 'number', '4')
+					+shildsMix('', 'single', '6', 'none', 'black', '', 'clear')
+					+shildsMix('', 'single', '6', 'none', 'red', 'number', '6')
+					+shildsMix('', '', '6', 'none', 'green', '4l', 'safe')
+					+shildsMix('none', '', '', '', 'red', 'number', '7')
+					+shildsMix('', 'single', '12', 'none', 'red', 'number', '8')
+					+shildsMix('', 'single', '12', 'none', 'red', 'number', '9')
+					+shildsMix('', '', '18', 'none', 'green', '4l', 'safe')
+					// +shildsMix('', '', '30', 'none', 'red', '2w', '')
+					.line
+						.shild
+							.shild__titleWrap
+								p.shild__title 30 
+									span for 
+									| 1
+							.shild__lotWrap._red
+								p.shild__lotTitle._2w start<br/>over
+					+shildsMix('', '', '60', 'none', 'red', '3l', 'fin')
+		.perspective
+			.cuphead
+			.perspectiveBlock.rotate
+				mixin perspectiveBlocksMix()
+					.perspectiveBlock__block
+						.perspectiveBlock__circle
+							.perspectiveBlock__circleInside
+				- for (var x = 0; x < 5; x++)
+					+perspectiveBlocksMix()
+	.bosses._mgt

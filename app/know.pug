@@ -1,0 +1,24 @@
+html
+	head
+		include template/head.pug
+		include template/partials/_general.pug
+		include template/partials/know/_linkKnowStyle.pug
+	body
+		.container
+			include template/partials/menu/_burger.pug
+			.wrap
+				.sideCard
+					.sideCard__img
+					.sideCard__titleWrap
+						h1.sideCard__title headache
+				.card
+					include template/partials/menu/_menu.pug
+					.box
+						include template/partials/know/_header.pug
+						include template/partials/know/_main.pug
+						include template/partials/know/_footer.pug
+				.sideCard
+					.sideCard__img
+					.sideCard__titleWrap
+						h1.sideCard__title headache
+		include template/partials/_mainScripts.pug

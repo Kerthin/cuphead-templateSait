@@ -1,0 +1,20 @@
+html
+	head
+		include template/head.pug
+		include template/partials/_general.pug
+		include template/partials/casino/_linkCasinoStyle.pug
+	body
+		mixin bonesMix()
+			.circleSquare__bone
+				- for (var x = 0; x < 6; x++)
+					.circleSquare__point
+		.container
+			include template/partials/menu/_burger.pug
+			.wrap
+				.card
+					include template/partials/menu/_menu.pug
+					.box
+						include template/partials/casino/_header.pug
+						include template/partials/casino/_main.pug
+						include template/partials/casino/_footer.pug
+		include template/partials/_mainScripts.pug

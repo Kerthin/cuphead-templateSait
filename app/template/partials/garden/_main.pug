@@ -1,0 +1,12 @@
+.main
+	.presentBlock.clearfix
+		.gradientBox
+		.characterBlock
+			- var list = ['potato', 'potato', 'onion', 'onion']
+			each item in list
+				.characterBlock__square(class=`_${item}`)
+			.characterBlock__circle
+				.circleWall
+				.circleFloor
+				.circleImg
+		.gradientBox

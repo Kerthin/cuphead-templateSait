@@ -1,0 +1,18 @@
+header.header.clearfix
+	.sideBox
+		.sideBox__inside._cuphead
+	.sideBlock
+		+triangleMix()
+		.sideBlock__article
+			mixin gridMix(letter, padding)
+				.grid
+					.grid__btn(class=`_p${padding}`)
+						span.grid__letter= letter
+			+gridMix('R')
+			+gridMix('I', '16')
+			+gridMix('B')
+			+gridMix('B')
+			+gridMix('Y')
+		+triangleMix()
+	.sideBox
+		.sideBox__inside._cuphead._reverse

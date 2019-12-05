@@ -1,0 +1,24 @@
+html
+	head
+		include template/head.pug
+		include template/partials/_general.pug
+		include template/partials/fury/_linkFuryStyle.pug
+	body
+		.container
+			include template/partials/menu/_burger.pug
+			.wrap
+				.sideCard
+					.sideCard__img._reverse
+					.sideCard__titleWrap
+						h1.sideCard__title allergy
+				.card
+					include template/partials/menu/_menu.pug
+					.box
+						include template/partials/fury/_header.pug
+						include template/partials/fury/_main.pug
+						include template/partials/fury/_footer.pug
+				.sideCard
+					.sideCard__img
+					.sideCard__titleWrap
+						h1.sideCard__title allergy
+		include template/partials/_mainScripts.pug

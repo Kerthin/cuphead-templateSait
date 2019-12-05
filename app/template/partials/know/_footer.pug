@@ -1,0 +1,21 @@
+footer.footer
+	.footer__title
+		span.purple about
+	.sideBlock__article
+		mixin gridMix(letter, padding)
+			.grid
+				.grid__btn(class=`_p${padding}`)
+					span.grid__letter= letter
+		+gridMix('H')
+		+gridMix('Y')
+		+gridMix('P')
+		+gridMix('N')
+		+gridMix('O')
+		+gridMix('S')
+		+gridMix('I', '16')
+		+gridMix('S')
+	.footer__title
+		span.pink for 
+		span.orange.swampy reasonable
+	.footer__title
+		span.blue vegetables

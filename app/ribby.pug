@@ -1,0 +1,32 @@
+html
+	head
+		include template/head.pug
+		include template/partials/_general.pug
+		include template/partials/ribby/_linkRibbyStyle.pug
+	body
+		mixin triangleMix()
+			.sideBlock__triangle
+				.sideBlock__tAngle
+				.sideBlock__bAngle
+		.container
+			include template/partials/menu/_burger.pug
+			.wrap
+				.sideCard
+					.sideCard__rhombus
+					.sideCard__content
+						.sideCard__letter C
+						.sideCard__letter H
+						.sideCard__img
+				.card
+					include template/partials/menu/_menu.pug
+					.box
+						include template/partials/ribby/_header.pug
+						include template/partials/ribby/_main.pug
+						include template/partials/ribby/_footer.pug
+				.sideCard
+					.sideCard__rhombus
+					.sideCard__content
+						.sideCard__letter C
+						.sideCard__letter H
+						.sideCard__img._reverse
+		include template/partials/_mainScripts.pug
