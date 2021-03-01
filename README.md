@@ -134,8 +134,7 @@ To develop the project through gulp, I used the following types of NPM plugins:
 
 - `app` - this repository is intended for files with the help of which the project is being developed. It is from this repository that all project files are compiled, which are later transferred to the `dist` repository;
 - `dist` - this folder is a repository where files from the `app` repository are compiled;
-- `dist (not minimized)` - repository is analogous to `dist` folder, but their difference is that in this repository files are not minimized for those who want to look at the compiled code;
-- `bower_components` - is a repository that contains components with their dependencies downloaded using `bower`.
+- `docs` - .
 
 #### The following describes in more detail the repository `app` and `dist`:
 
@@ -172,3 +171,26 @@ To develop the project through gulp, I used the following types of NPM plugins:
   - `webserver` - this command is run through the console by writing it `gulp webserver`. This command is used to start the local web server;
   - `clean` - this command is run through the console by writing it `gulp clean`. This command is used to clean up the repository;
   - `default` - this command is run through the console by writing it `gulp default`.This command is used to run all tasks at the same time.
+
+#### Gif
+
+  - Ribby page <br>
+  <a href="#"><img src="READMEimage/gif/ribby.gif" /></a>
+
+  - Nonsense page <br>
+  <a href="#"><img src="READMEimage/gif/nonsense.gif" /></a>
+
+  - Know page <br>
+  <a href="#"><img src="READMEimage/gif/know.gif" /></a>
+  
+  - Always page <br>
+  <a href="#"><img src="READMEimage/gif/always.gif" /></a>
+
+  - Fury page <br>
+  <a href="#"><img src="READMEimage/gif/fury.gif" /></a>
+
+  - Finish page <br>
+  <a href="#"><img src="READMEimage/gif/finish.gif" /></a>
+  
+  - Casino page <br>
+  <a href="#"><img src="READMEimage/gif/casino.gif" /></a>
