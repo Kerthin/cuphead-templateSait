@@ -264,3 +264,75 @@
 		background-position: 427px 0;
 	}
 }
+
+
+@media screen and (orientation: landscape) and (max-height: 985px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.8);
+	}
+	.sideCard {
+		transform: translateY(-50%) translateX(-5%) scale(.8);
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 790px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.6);
+	}
+	.sideCard {
+		transform: translateY(-50%) translateX(-5%) scale(.6);
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 600px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.4);
+	}
+	.sideCard {
+		transform: translateY(-50%) translateX(-5%) scale(.4);
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 405px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.2);
+	}
+	.sideCard {
+		transform: translateY(-50%) translateX(-5%) scale(.2);
+	}
+}
+
+@media screen and (max-width: 1700px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.8);
+	}
+	.sideCard {
+		transform: translateY(-50%) translateX(-5%) scale(.8);
+	}
+}
+@media screen and (max-width: 1400px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.6);
+	}
+	.sideCard {
+		transform: translateY(-50%) translateX(-5%) scale(.6);
+	}
+}
+@media screen and (max-width: 1140px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.4);
+	}
+	.sideCard {
+		transform: translateY(-50%) translateX(-5%) scale(.4);
+	}
+}
+@media screen and (max-width: 890px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.3);
+	}
+	.sideCard {
+		display: none;
+	}
+}
+@media screen and (max-width: 320px) {
+	.card {
+		transform: translate(-50%, -50%) scale(.28);
+	}
+}
