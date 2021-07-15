@@ -13,263 +13,266 @@
 
 @import 'variables/pathVariables.scss';
 
-.wrap {
-	background-color: #f0966d;
-}
+.container.finish {
 
-.sideCard:last-child {
-	right: 3.2%;
-}
+	.wrap {
+		background-color: #f0966d;
+	}
 
-.sideCard__img {
-	background-image: url('#{$staticImagePath}/finish/kingSideBox.png');
-}
-.sideCard__title {
-	font-family: 'Rounds';
-	font-size: 45px;
-	line-height: 55px;
-}
+	.sideCard:last-child {
+		right: 3.2%;
+	}
 
-.high {
-	font-size: 53px;
-	line-height: 53px;
-}
-.orange {
-	color: #f0966d;
-}
-.blue {
-	color: #7fcae2;
-}
-.purple {
-	color: #c6a8ca;
-}
+	.sideCard__img {
+		background-image: url('#{$staticImagePath}/finish/kingSideBox.png');
+	}
+	.sideCard__title {
+		font-family: 'Rounds';
+		font-size: 45px;
+		line-height: 55px;
+	}
 
-.card {
-	padding: 27px;
-	width: 908px;
-	height: 908px;
-	background-color: #fbf2e4;
+	.high {
+		font-size: 53px;
+		line-height: 53px;
+	}
+	.orange {
+		color: #f0966d;
+	}
+	.blue {
+		color: #7fcae2;
+	}
+	.purple {
+		color: #c6a8ca;
+	}
 
-	.box {
-		width: 100%;
-		height: 100%;
-		background-color: #000;
+	.card {
+		padding: 27px;
+		width: 908px;
+		height: 908px;
+		background-color: #fbf2e4;
 
-		.header,
-		.main,
-		.footer {
-			position: relative;
-		}
-		.header,
-		.footer {
+		.box {
 			width: 100%;
-			height: 65px;
-		}
-		.main {
-			width: 100%;
-			height: calc(100% - 130px);
-			background-color: #7fcae2;
-		}
-	}
-}
+			height: 100%;
+			background-color: #000;
 
-.sideBox {
-	position: relative;
-	float: left;
-	width: 65px;
-	height: 100%;
-	background-color: #7fcae2;
-
-	&__angle {
-		border-top: 65px solid #000;
-		border-right: 65px solid transparent;
-	}
-	&__square {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translateY(-50%) translateX(-50%);
-		width: 38px;
-		height: 38px;
-		border: 2px solid;
-		background-color: #fff;
-	}
-}
-
-.sideBlock {
-	position: relative;
-	float: left;
-	width: calc(100% - 130px);
-	height: 100%;
-	border: 5px solid;
-	background: repeating-linear-gradient(125deg, #f0966d, #f0966d 30px, #000 30px, #000 58.5px);
-	animation: animationGradientH 4s linear infinite;
-
-	&__article {
-		position: absolute;
-		top: -5px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 100px;
-		height: calc(100% + 10px);
-		border: 5px solid;
-		background-color: #c6a8ca;
-
-		.sideBlock__title {
-			font-family: sans-serif;
-			text-align: center;
-			font-size: 60px;
-			line-height: 60px;
-		}
-	}
-}
-
-.gradientBox {
-	float: left;
-	width: 65px;
-	height: 100%;
-	border: 5px solid;
-	background: repeating-linear-gradient(125deg, #c6a8ca, #c6a8ca 15px, #000 15px, #000 34.1px);
-	animation: animationGradient 4s linear infinite;
-
-	&:first-child {
-		margin-right: 10px;
-	}
-}
-
-.presentBlock {
-	position: relative;
-	float: left;
-	margin: 10px 10px 0 0;
-	width: calc(100% - 150px);
-	height: calc(100% - 20px);
-
-	&__titleWrap {
-		margin-bottom: 10px;
-		width: 100%;
-		height: 163px;
-		background-color: #000;
-
-		.presentBlock__commas {
-			position: absolute;
-			top: -10px;
-			font-family: 'Swampy';
-			font-size: 180px;
-			line-height: 180px;
-			color: #c6a8ca;
-
-			&:first-child {
-				left: 30px;
+			.header,
+			.main,
+			.footer {
+				position: relative;
 			}
-			&:last-child {
-				right: 30px;
+			.header,
+			.footer {
+				width: 100%;
+				height: 65px;
 			}
-		}
-
-		.presentBlock__title {
-			position: absolute;
-			top: 5px;
-			left: 50%;
-			transform: translateX(-50%);
-			font-family: 'Rounds';
-			font-size: 180px;
-			line-height: 180px;
-			color: #fbf2e4;
-			letter-spacing: -15px;
-		}
-	}
-}
-
-.characterBlock {
-	margin-bottom: 10px;
-	width: 100%;
-	height: 363px;
-
-	&__side {
-		float: left;
-		width: 158px;
-		height: 100%;
-
-		&:first-child {
-			margin-right: 10px;
-		}
-
-		.characterBlock__sideImg {
-			width: 100%;
-			border: 5px solid;
-			background-size: contain;
-			background-position: center;
-			background-repeat: no-repeat;
-
-			&:first-child {
-				margin-bottom: 10px;
-				height: 158px;
-				background-color: #f0966d;
-				background-image: url('#{$staticImagePath}/finish/kingHead_151.png')
-			}
-
-			&:last-child {
-				height: calc(100% - 168px);
-				background-color: #fbf2e4;
-				background-image: url('#{$staticImagePath}/finish/fullKing_151.png')
+			.main {
+				width: 100%;
+				height: calc(100% - 130px);
+				background-color: #7fcae2;
 			}
 		}
 	}
-
-	&__img {
-		margin-right: 10px;
-		float: left;
-		width: calc(100% - 336px);
-		height: 100%;
-		border: 5px solid;
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-image: url('#{$gifImagePath}/finish/king_clean2.gif');
-		background-color: #c6a8ca;
-	}
-}
-
-.characterInfo {
-	width: 100%;
-	height: 158px;
 
 	.sideBox {
 		position: relative;
-		width: 158px;
+		float: left;
+		width: 65px;
 		height: 100%;
-		border: 5px solid;
-		background-color: #f0966d;
+		background-color: #7fcae2;
 
-		&:first-child {
-			margin-right: 10px;
+		&__angle {
+			border-top: 65px solid #000;
+			border-right: 65px solid transparent;
 		}
-
-		&__img {
+		&__square {
 			position: absolute;
-			top: 55px;
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			background-position: -45px;
-			background-repeat: no-repeat;
-			background-image: url('#{$staticImagePath}/finish/cuphead-king-dice-png-1.png');
-			z-index: 2;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			width: 38px;
+			height: 38px;
+			border: 2px solid;
+			background-color: #fff;
 		}
 	}
 
 	.sideBlock {
-		margin-right: 10px;
-		width: calc(100% - 336px);
+		position: relative;
+		float: left;
+		width: calc(100% - 130px);
 		height: 100%;
-		background: #000;
+		border: 5px solid;
+		background: repeating-linear-gradient(125deg, #f0966d, #f0966d 30px, #000 30px, #000 58.5px);
+		animation: animationGradientH 4s linear infinite;
 
-		&__title {
-			font-family: 'Rounds';
-			text-align: center;
-			font-size: 41px;
-			line-height: 41px;
-			color: #fbf2e4;
+		&__article {
+			position: absolute;
+			top: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100px;
+			height: calc(100% + 10px);
+			border: 5px solid;
+			background-color: #c6a8ca;
+
+			.sideBlock__title {
+				font-family: sans-serif;
+				text-align: center;
+				font-size: 60px;
+				line-height: 60px;
+			}
+		}
+	}
+
+	.gradientBox {
+		float: left;
+		width: 65px;
+		height: 100%;
+		border: 5px solid;
+		background: repeating-linear-gradient(125deg, #c6a8ca, #c6a8ca 15px, #000 15px, #000 34.1px);
+		animation: animationGradient 4s linear infinite;
+
+		&:first-child {
+			margin-right: 10px;
+		}
+	}
+
+	.presentBlock {
+		position: relative;
+		float: left;
+		margin: 10px 10px 0 0;
+		width: calc(100% - 150px);
+		height: calc(100% - 20px);
+
+		&__titleWrap {
+			margin-bottom: 10px;
+			width: 100%;
+			height: 163px;
+			background-color: #000;
+
+			.presentBlock__commas {
+				position: absolute;
+				top: -10px;
+				font-family: 'Swampy';
+				font-size: 180px;
+				line-height: 180px;
+				color: #c6a8ca;
+
+				&:first-child {
+					left: 30px;
+				}
+				&:last-child {
+					right: 30px;
+				}
+			}
+
+			.presentBlock__title {
+				position: absolute;
+				top: 5px;
+				left: 50%;
+				transform: translateX(-50%);
+				font-family: 'Rounds';
+				font-size: 180px;
+				line-height: 180px;
+				color: #fbf2e4;
+				letter-spacing: -15px;
+			}
+		}
+	}
+
+	.characterBlock {
+		margin-bottom: 10px;
+		width: 100%;
+		height: 363px;
+
+		&__side {
+			float: left;
+			width: 158px;
+			height: 100%;
+
+			&:first-child {
+				margin-right: 10px;
+			}
+
+			.characterBlock__sideImg {
+				width: 100%;
+				border: 5px solid;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+
+				&:first-child {
+					margin-bottom: 10px;
+					height: 158px;
+					background-color: #f0966d;
+					background-image: url('#{$staticImagePath}/finish/kingHead_151.png')
+				}
+
+				&:last-child {
+					height: calc(100% - 168px);
+					background-color: #fbf2e4;
+					background-image: url('#{$staticImagePath}/finish/fullKing_151.png')
+				}
+			}
+		}
+
+		&__img {
+			margin-right: 10px;
+			float: left;
+			width: calc(100% - 336px);
+			height: 100%;
+			border: 5px solid;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url('#{$gifImagePath}/finish/king_clean2.gif');
+			background-color: #c6a8ca;
+		}
+	}
+
+	.characterInfo {
+		width: 100%;
+		height: 158px;
+
+		.sideBox {
+			position: relative;
+			width: 158px;
+			height: 100%;
+			border: 5px solid;
+			background-color: #f0966d;
+
+			&:first-child {
+				margin-right: 10px;
+			}
+
+			&__img {
+				position: absolute;
+				top: 55px;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: -45px;
+				background-repeat: no-repeat;
+				background-image: url('#{$staticImagePath}/finish/cuphead-king-dice-png-1.png');
+				z-index: 2;
+			}
+		}
+
+		.sideBlock {
+			margin-right: 10px;
+			width: calc(100% - 336px);
+			height: 100%;
+			background: #000;
+
+			&__title {
+				font-family: 'Rounds';
+				text-align: center;
+				font-size: 41px;
+				line-height: 41px;
+				color: #fbf2e4;
+			}
 		}
 	}
 }
@@ -289,5 +292,98 @@
 	}
 	to {
 		background-position: 714px 0;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-height: 938px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.8);
+		}
+		.sideCard {
+			transform: translateY(-50%) translateX(-5%) scale(.8);
+		}
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 757px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.6);
+		}
+		.sideCard {
+			transform: translateY(-50%) translateX(-5%) scale(.6);
+		}
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 574px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.4);
+		}
+		.sideCard {
+			transform: translateY(-50%) translateX(-5%) scale(.4);
+		}
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 393px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.2);
+		}
+		.sideCard {
+			transform: translateY(-50%) translateX(-5%) scale(.2);
+		}
+	}
+}
+
+@media screen and (max-width: 1700px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.8);
+		}
+		.sideCard {
+			transform: translateY(-50%) translateX(-5%) scale(.8);
+		}
+	}
+}
+@media screen and (max-width: 1460px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.6);
+		}
+		.sideCard {
+			transform: translateY(-50%) translateX(-5%) scale(.6);
+		}
+	}
+}
+@media screen and (max-width: 1180px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.4);
+		}
+		.sideCard {
+			transform: translateY(-50%) translateX(-5%) scale(.4);
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+	.container.finish {
+		.sideCard {
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 390px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.35);
+		}
+	}
+}
+@media screen and (max-width: 330px) {
+	.container.finish {
+		.card {
+			transform: translate(-50%, -50%) scale(.3);
+		}
 	}
 }
